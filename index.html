@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JS Playground — Forums</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="index">
+  <header class="topbar">
+    <div class="logo">JS Playground</div>
+    <input id="searchInput" class="search" placeholder="Search threads or users..." />
+    <div id="authArea" class="auth-area"></div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <div class="card">
+        <div class="card-title">Sections</div>
+        <ul id="sectionsList" class="sections-list"></ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Account</div>
+        <div id="accountQuick" class="muted">Not signed in</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Moderation</div>
+        <div id="modTools" class="muted">Sign in as a moderator to see tools.</div>
+      </div>
+    </aside>
+
+    <section id="content" class="content">
+      <!-- dynamic: recent threads or empty notice -->
+    </section>
+  </main>
+
+  <footer class="footer">JS Playground — Front-end forum demo</footer>
+
+  <script>const PAGE='index';</script>
+  <script src="script.js"></script>
+</body>
+</html>
