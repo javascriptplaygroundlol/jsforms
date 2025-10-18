@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Section - JS Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="section">
+  <header class="topbar">
+    <div class="logo"><a href="index.html" class="logo-link">JS Playground</a></div>
+    <input id="searchInput" class="search" placeholder="Search threads or users..." />
+    <div id="authArea" class="auth-area"></div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <div class="card">
+        <div class="card-title">Sections</div>
+        <ul id="sectionsList" class="sections-list"></ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Account</div>
+        <div id="accountQuick" class="muted">Not signed in</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Moderation</div>
+        <div id="modTools" class="muted">Sign in as a moderator to see tools.</div>
+      </div>
+    </aside>
+
+    <section id="content" class="content">
+      <!-- section content -->
+    </section>
+  </main>
+
+  <footer class="footer"><a href="index.html">← Back to Home</a></footer>
+
+  <script>const PAGE='section';</script>
+  <script src="script.js"></script>
+</body>
+</html>
